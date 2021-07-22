@@ -8,6 +8,7 @@
 % Balbuena , Daniel
 % Larrubia , Raúl
 
+%% Spanish
 %% METODO DE PANELES PARA PERFILES AERODINAMICOS
 clear all
 format short
