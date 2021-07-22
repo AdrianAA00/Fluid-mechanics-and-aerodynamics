@@ -1,4 +1,8 @@
 %% Authors:
+% Antón , Adrián
+% Tabanera , Antonio
+% Balbuena , Daniel
+% Larrubia , Raúl
 
 %% METODO DE MALLAS DE TORBELLINOS PARA ALAS DA GRAN ENVERGADURA (alargamiento>5, estrechamiento>4)
 %%% ala trapezoidal
