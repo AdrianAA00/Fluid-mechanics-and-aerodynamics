@@ -1,12 +1,6 @@
 %-----------------------------------------------------------------------
 %                       Panel method for airfoils
 %------------------------------------------------------------------------
-%% Authors:
-
-% Antón , Adrián
-% Tabanera , Antonio
-% Balbuena , Daniel
-% Larrubia , Raúl
 
 %% Spanish
 %% METODO DE PANELES PARA PERFILES AERODINAMICOS
