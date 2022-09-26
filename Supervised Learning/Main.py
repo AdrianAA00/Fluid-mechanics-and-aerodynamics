@@ -7,7 +7,8 @@
 # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # //************************************************************************ DESCRIPTION ****************************************************************************//
-
+# There are serveral codes which include non-compressible, compressible and viscous solutions. Then the Neural Network should be selected: NN1D (own developed NN)
+# or Keras library. Finally, the user should select the model that he wants to use from all the available ones. 
 # //*****************************************************************************************************************************************************************//
 
 
@@ -20,7 +21,7 @@ from numpy import transpose
 from keras.models import Sequential,save_model, load_model
 from sympy import C
 
-# importing  all the functions
+#___Available Solvers and models____
 #from AirfoilDisplay import *
 #from Wing3D import *
 #from CompressibleFlow import *
