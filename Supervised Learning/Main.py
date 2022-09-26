@@ -8,11 +8,11 @@
 
 # //************************************************************************ DESCRIPTION ****************************************************************************//
 # There are serveral codes which include non-compressible, compressible and viscous solutions. Then the Neural Network should be selected: NN1D (own developed NN)
-# or Keras library. Finally, the user should select the model that he wants to use from all the available ones. 
+# or Keras library. Finally, the user should select the model that he wants to use from all the available ones.
 # //*****************************************************************************************************************************************************************//
 
 
-# Main
+# Main_
 from cmath import pi
 from tkinter import Y
 from tkinter.ttk import Separator
