@@ -26,10 +26,11 @@ def Airfoil(delta, lamda, alpha, n, n_points):
 
     Cp = Pressure_field_boundary(alpha, delta, lamda, n,  n_points)
 
-    plt.plot(x[1:int(n_points/2)+1], -Cp[1:int(n_points/2)+1], color = "red", label = "extradós")
-    plt.plot(x[int(n_points/2):n_points], -Cp[int(n_points/2):n_points], color = "green", label = "intradós")
+    plt.plot(x[1:int(n_points/2)+1], -Cp[1:int(n_points/2)+1] - Cp[n_points-1:int(n_points/2)-1:-1], color = "Black", label = "Cp_global")
+    #plt.plot(x[1:int(n_points/2)+1], -Cp[1:int(n_points/2)+1], color = "red", label = "extradós")
+    #plt.plot(x[int(n_points/2):n_points], -Cp[int(n_points/2):n_points], color = "green", label = "intradós")
     plt.xlim(min(x), max(x))
-    plt.ylim(- 1, max(-Cp))
+    #plt.ylim(- 1, max(-Cp))
     #plt.gca().set_aspect('equal', adjustable='box')
     plt.xlabel('x - axis')
     plt.ylabel('cp -  axis')
@@ -66,7 +67,8 @@ def Airfoil(delta, lamda, alpha, n, n_points):
     plt.ylim(y2min, y2max)
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.contour(x2, y2, contour, 50, cmap='RdGy')
+    plt.gca().set_aspect('equal', adjustable='box')
+    plt.contour(x2, y2, contour, 25, cmap='gist_gray')
     plt.plot(x, y)
     plt.colorbar()
 
@@ -76,8 +78,7 @@ def Airfoil(delta, lamda, alpha, n, n_points):
     plt.ylabel('Y')
 
     normi = mpl.colors.Normalize(vmin=-2, vmax = 1)
-    cont_PSD = plt.contourf(x2, y2, CP_field , 500,linestyle=None,norm=normi, extend='both')
-
-    plt.plot(x, y)
+    cont_PSD = plt.contourf(x2, y2, CP_field , 50,linestyle=None,norm=normi, extend='both')
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.colorbar()
     plt.show()
